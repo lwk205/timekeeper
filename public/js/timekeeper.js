@@ -2,9 +2,9 @@
 
 	$('#info').html("定時進行にご協力ください")
 	var audio_chime1,audio_chime2,audio_chime3;
-	audio_chime1 = new Audio("./wav/chime1.wav");
-	audio_chime2 = new Audio("./wav/chime2.wav");
-	audio_chime3 = new Audio("./wav/chime3.wav");
+	audio_chime1 = new Audio("/wav/chime1.wav");
+	audio_chime2 = new Audio("/wav/chime2.wav");
+	audio_chime3 = new Audio("/wav/chime3.wav");
 	
 	$('.nav #standby').click(function (){
 		$('.nav li').removeClass('active');
