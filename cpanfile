@@ -7,6 +7,4 @@ on 'test' => sub {
 requires 'Mojolicious::Lite';
 requires 'Plack';
 requires 'Plack::Builder';
-requires 'Plack::Session';
-requires 'Plack::Middleware::Session';
 requires 'Starman';
