@@ -8,7 +8,7 @@ get '/' => sub {
 get '/:minute' => sub {
   my $self = shift;
   my $minute = $self->param('minute');
-  $self->stash->{first}   = abs (5 - $minute);
+  $self->stash->{first}   = $minute < 5 ? 99 : abs (5 - $minute);
   $self->stash->{second}  = abs (1 - $minute);
   $self->stash->{third}   = $minute;
       
