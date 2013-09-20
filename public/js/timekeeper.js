@@ -1,6 +1,6 @@
 ﻿$(function(){
 
-	$('#info').html("定時進行にご協力ください")
+//	$('#info').html("定時進行にご協力ください")
 	var audio_chime1,audio_chime2,audio_chime3;
 	audio_chime1 = new Audio("/wav/chime1.wav");
 	audio_chime2 = new Audio("/wav/chime2.wav");
@@ -89,12 +89,9 @@
 						audio_chime1.play();
 					}
 
-					if((last_time < time2 && time2 <= cur_time) || (last_time==time2 && cur_time==time2)){
-						audio_chime2.play();
-					}
-					
 					if((last_time < time3 && time3 <= cur_time) || (last_time==time3 && cur_time==time3)){
-						audio_chime3.play();
+						audio_chime2.play();                        
+
 					}
 
 				}

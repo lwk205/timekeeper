@@ -61,11 +61,12 @@ __DATA__
 	<div id="time">
 		00:00
 	</div>
-	<div id="state">
-		STANDBY
-	</div>
-	<div id="info">
-		STANDBY
-	</div>
+<!--	 <div id="state">
+	 	STANDBY
+	 </div>
+	 <div id="info">
+	 	STANDBY
+	 </div>
+    -->
 </body>
 </html>
