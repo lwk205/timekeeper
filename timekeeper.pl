@@ -8,9 +8,8 @@ get '/' => sub {
 get '/:minute' => sub {
   my $self = shift;
   my $minute = $self->param('minute');
-  $self->stash->{first}   = $minute < 5 ? 99 : abs (5 - $minute);
-  $self->stash->{second}  = abs (1 - $minute);
-  $self->stash->{third}   = $minute;
+  $self->stash->{first}    = $minute < 5 ? 99 : abs (5 - $minute);
+  $self->stash->{second}   = $minute;
       
   $self->render('index');
 };
@@ -50,7 +49,6 @@ __DATA__
 		  <form class="pull-left" action="">
 			<input id="time1" type="text" style="width:5ex;" value="<%= $first %>:00">
 			<input id="time2" type="text" style="width:5ex;" value="<%= $second %>:00">
-			<input id="time3" type="text" style="width:5ex;" value="<%= $third %>:00">
 		  </form>
           <ul class="nav second-nav">
             <li id="soundcheck"><a href="#soundcheck">Sound Check</a></li>
